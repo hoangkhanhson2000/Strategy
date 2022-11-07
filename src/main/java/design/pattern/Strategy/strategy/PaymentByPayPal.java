@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 
 public class PaymentByPayPal implements PaymentStrategy {
 
-    private String email;
-    private String password;
+//    private String email;
+//    private String password;
     BufferedReader dataIn = new BufferedReader(new
             InputStreamReader( System.in) );
     private Account account;

@@ -17,7 +17,7 @@ public class PaymentByCreditCard implements PaymentStrategy {
     @Override
     public void collectPaymentDetails() {
         try {
-            System.out.print("Payment By Credit Card ");
+            System.out.print("Payment By Credit Card | ");
             System.out.print("Enter the card number: ");
             String number = dataIn.readLine();
             System.out.print("Enter the card expiration date 'mm/yy': ");

@@ -17,10 +17,10 @@ public class PaymentByPayPal implements PaymentStrategy {
 
     @Override
     public void collectPaymentDetails() {
-        // Pop-up to collect PayPal mail and password...
+
 
         try {
-            System.out.print("Payment By PayPal");
+            System.out.print("Payment By PayPal | 1");
             System.out.print("Enter the email:");
             String email = dataIn.readLine();
             System.out.print("Enter the password: ");

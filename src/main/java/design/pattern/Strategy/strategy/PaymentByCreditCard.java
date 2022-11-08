@@ -26,8 +26,6 @@ public class PaymentByCreditCard implements PaymentStrategy {
             String cvv = dataIn.readLine();
             card = new CreditCard(number, date, cvv);
 
-            // Validate credit card number...
-
         } catch (IOException ex) {
             ex.printStackTrace();
         }

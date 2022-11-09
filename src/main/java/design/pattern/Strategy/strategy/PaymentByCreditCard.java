@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PaymentByCreditCard implements PaymentStrategy {
+public class PaymentByCreditCard extends BasePayment {
 
     BufferedReader dataIn = new BufferedReader(new
             InputStreamReader( System.in) );

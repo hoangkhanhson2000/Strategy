@@ -1,11 +1,14 @@
 
 package design.pattern.Strategy.strategy;
 import design.pattern.Strategy.Account;
+import org.springframework.stereotype.Component;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PaymentByPayPal implements PaymentStrategy {
+@Component
+public class PaymentByPayPal extends BasePayment {
 
 //    private String email;
 //    private String password;
@@ -20,7 +23,7 @@ public class PaymentByPayPal implements PaymentStrategy {
 
 
         try {
-            System.out.print("Payment By PayPal | 1");
+            System.out.print("Payment By PayPal | ");
             System.out.print("Enter the email:");
             String email = dataIn.readLine();
             System.out.print("Enter the password: ");
